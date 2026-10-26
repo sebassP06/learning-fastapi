@@ -9,7 +9,7 @@ import time
 
 load_dotenv() 
 
-SQL_ALCHEMY_DATABASE_URL = f'postgresql://postgres:{os.getenv('MY_PASS')}@localhost/fastapi'
+SQL_ALCHEMY_DATABASE_URL = f'postgresql://avnadmin:{os.getenv('MY_PASS')}@pg-16d84605-learning-fastapi.j.aivencloud.com:17438/defaultdb?sslmode=require'
 
 engine = create_engine(SQL_ALCHEMY_DATABASE_URL)
 

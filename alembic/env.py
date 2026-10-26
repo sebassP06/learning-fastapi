@@ -13,7 +13,7 @@ load_dotenv(dotenv_path="../app/.env")
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
-config.set_main_option("sqlalchemy.url", f'postgresql://postgres:{os.getenv('MY_PASS')}@localhost/fastapi')
+config.set_main_option("sqlalchemy.url", f'postgresql://avnadmin:{os.getenv('MY_PASS')}@pg-16d84605-learning-fastapi.j.aivencloud.com:17438/defaultdb?sslmode=require')
 
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.
